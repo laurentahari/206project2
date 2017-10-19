@@ -1,0 +1,31 @@
+# Project2
+Starter Code and descriptions for Project2
+Name: Lauren Tahari
+
+Task 1
+used "findall" to find all the strings that begin with Http(s) followed by any character, followed by a "." and then additional characters
+
+Task 2
+read the html file
+find all headlines that have "most read" tag
+find all headlines that are surrounded by the tag 'a' --> most read
+create empty list
+loop through the list and add all the text of the headlines to the list
+
+Task 3
+create empty dictionary
+write base_url (excluding page number )
+use range 13 because pages 1-12; need to account for all pages --> add this to end of base url
+must add "specificpage" this to end of url becuase we are going from pages 1-12 (and it starts at page 1)
+parse through the html page and find all info for each person
+find name for each person and assign variable x
+find title for each person and assign variable y
+make the names the keys and the titles the values; add to dictionary
+print dictionary
+
+Task 4
+initialize variable
+create for loop; for each dictionary in the data
+if the key is equal to PhD stident
+add it to the bin
+return number of phd students
