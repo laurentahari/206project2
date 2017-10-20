@@ -40,7 +40,7 @@ html = urllib.request.urlopen('https://www.michigandaily.com/section/opinion').r
 soup = BeautifulSoup(html, 'html.parser')
 def grab_headlines():
     print("Michigan Daily -- MOST READ")
-    most_read_pane = soup.find(class_="pane-mostread"): #find all headlines that have "most read" tag
+    most_read_pane = soup.find(class_="pane-mostread") #find all headlines that have "most read" tag
     #print(most_read_pane.prettify())
     atags= most_read_pane.find_all('a') #find all headlines that are surrounded by the tag 'a' --> most read
     mostread = [] #create empty list
